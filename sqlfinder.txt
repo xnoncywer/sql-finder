@@ -1,1 +1,2 @@
-i'm working more on this tool. This is just a simple script which tries list of payloads.
+i'm working more on this tool. This is a automation script in python which tries list of payloads and check if there is sql injection in website. 
+
